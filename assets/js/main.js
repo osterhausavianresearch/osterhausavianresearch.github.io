@@ -15,6 +15,7 @@
     ["Teaching", "teaching.html"],
     ["Lab Vision", "lab-vision.html"],
     ["News", "news.html"],
+    ["Lights Out<br>Coverage Viewer", "lights-out-alert-coverage-viewer.html", "nav-long"],
     ["CV", "cv.html"],
     ["Contact", "contact.html"]
   ];

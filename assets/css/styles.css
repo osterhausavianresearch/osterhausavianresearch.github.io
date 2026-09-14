@@ -151,11 +151,15 @@ a {
 }
 
 .hero {
+  --header-ratio: 2771 / 1200;
   background:
     linear-gradient(90deg, rgba(24, 33, 31, 0.82), rgba(24, 33, 31, 0.34)),
-    url("../../Photos/NMSU Grad Headshot_Profile Photo copy.jpg") center 26% / cover;
+    url("../../Photos/bird-photography/Kentucky Warbler_Ross Hills_5.2.26_05.jpg") center / cover no-repeat;
   color: var(--white);
-  min-height: 72vh;
+  min-height: 640px;
+  padding-block: 3rem;
+  display: flex;
+  align-items: center;
 }
 
 .hero .inner {
@@ -163,7 +167,7 @@ a {
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.55fr);
-  min-height: 58vh;
+  width: 100%;
 }
 
 .eyebrow {
@@ -556,10 +560,58 @@ p {
   color: var(--paper);
 }
 
-.viewer-hero {
+.page-hero.photo-hero {
+  min-height: 640px;
+  padding-block: 3rem;
+  display: flex;
+  align-items: center;
   background:
-    linear-gradient(90deg, rgba(24, 33, 31, 0.9), rgba(31, 61, 50, 0.64)),
-    url("../../Photos/site-images/project-lights-out.jpg") center / cover;
+    linear-gradient(90deg, rgba(24, 33, 31, 0.84), rgba(24, 33, 31, 0.5)),
+    var(--header-photo) center / cover no-repeat;
+}
+
+.page-hero.photo-hero .inner {
+  width: 100%;
+}
+
+.research-hero {
+  --header-ratio: 3632 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Magnolia Warbler_Newbury Neck_6.19.25_6.jpg");
+}
+
+.publications-hero {
+  --header-ratio: 3315 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Ovenbird_Newbury Neck_6.15.25_1.jpg");
+}
+
+.methods-hero {
+  --header-ratio: 2803 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Kirtland's Warbler_Adams County_6.5.26_03.jpg");
+}
+
+.lab-vision-hero {
+  --header-ratio: 2997 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Prothonotary Warbler_Perry_5.12.24_6.jpg");
+}
+
+.teaching-hero {
+  --header-ratio: 3048 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Prairie Warbler_Granville_4.28.26_04.jpg");
+}
+
+.news-hero {
+  --header-ratio: 2933 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Broad-billed Hummingbird_Clanton Canyon_5.30.24_1.jpg");
+}
+
+.contact-hero {
+  --header-ratio: 3150 / 1200;
+  --header-photo: url("../../Photos/bird-photography/Burrowing Owl_LPCA_3.30.24_1.jpg");
+}
+
+.lights-out-alert-coverage-viewer-hero {
+  --header-ratio: 4415 / 2943;
+  --header-photo: url("../../Photos/bird-photography/Long-eared Owl_Leasburg Dam_4.10.25_2.png");
 }
 
 .viewer-inner {
@@ -1054,14 +1106,6 @@ p {
 }
 
 @media (max-width: 640px) {
-  .hero {
-    min-height: auto;
-  }
-
-  .hero .inner {
-    min-height: 0;
-  }
-
   .stat-row {
     grid-template-columns: 1fr;
   }
@@ -1128,5 +1172,15 @@ p {
 
   .migration-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop headers follow the full photo's proportions instead of cropping it. */
+@media (min-width: 981px) {
+  .hero,
+  .page-hero.photo-hero {
+    min-height: 0;
+    aspect-ratio: var(--header-ratio);
+    background-size: 100% 100%, contain;
   }
 }

@@ -12,6 +12,8 @@ window.siteData.projects = [
     imageAlt: "Painted Bunting",
     summary: "Evaluating whether current Lights Out alert systems successfully overlap alert periods with migration passage, and assessing whether conservation goals are being met.",
     methods: ["Weather radar", "Migration forecasting", "Conservation application"],
+    ctaLabel: "Explore the Lights Out Coverage Viewer Here",
+    ctaUrl: "lights-out-alert-coverage-viewer.html",
     link: "research.html"
   },
   {
