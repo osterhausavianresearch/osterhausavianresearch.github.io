@@ -154,7 +154,7 @@ a {
   --header-ratio: 2771 / 1200;
   background:
     linear-gradient(90deg, rgba(24, 33, 31, 0.82), rgba(24, 33, 31, 0.34)),
-    url("../../Photos/bird-photography/Kentucky Warbler_Ross Hills_5.2.26_05.jpg") center / cover no-repeat;
+    url("../../Photos/bird-photography/Kentucky Warbler_Ross Hills_5.2.26_05.jpg?v=190059e123a3") center / cover no-repeat;
   color: var(--white);
   min-height: 640px;
   padding-block: 3rem;
@@ -576,42 +576,42 @@ p {
 
 .research-hero {
   --header-ratio: 3632 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Magnolia Warbler_Newbury Neck_6.19.25_6.jpg");
+  --header-photo: url("../../Photos/bird-photography/Magnolia Warbler_Newbury Neck_6.19.25_6.jpg?v=bbe134505088");
 }
 
 .publications-hero {
   --header-ratio: 3315 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Ovenbird_Newbury Neck_6.15.25_1.jpg");
+  --header-photo: url("../../Photos/bird-photography/Ovenbird_Newbury Neck_6.15.25_1.jpg?v=448904440e00");
 }
 
 .methods-hero {
   --header-ratio: 2803 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Kirtland's Warbler_Adams County_6.5.26_03.jpg");
+  --header-photo: url("../../Photos/bird-photography/Kirtland's Warbler_Adams County_6.5.26_03.jpg?v=8a1a36b6047a");
 }
 
 .lab-vision-hero {
   --header-ratio: 2997 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Prothonotary Warbler_Perry_5.12.24_6.jpg");
+  --header-photo: url("../../Photos/bird-photography/Prothonotary Warbler_Perry_5.12.24_6.jpg?v=0446c51221c4");
 }
 
 .teaching-hero {
   --header-ratio: 3048 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Prairie Warbler_Granville_4.28.26_04.jpg");
+  --header-photo: url("../../Photos/bird-photography/Prairie Warbler_Granville_4.28.26_04.jpg?v=ea336a485751");
 }
 
 .news-hero {
   --header-ratio: 2933 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Broad-billed Hummingbird_Clanton Canyon_5.30.24_1.jpg");
+  --header-photo: url("../../Photos/bird-photography/Broad-billed Hummingbird_Clanton Canyon_5.30.24_1.jpg?v=0248d90c4f54");
 }
 
 .contact-hero {
   --header-ratio: 3150 / 1200;
-  --header-photo: url("../../Photos/bird-photography/Burrowing Owl_LPCA_3.30.24_1.jpg");
+  --header-photo: url("../../Photos/bird-photography/Burrowing Owl_LPCA_3.30.24_1.jpg?v=82a60ea1137f");
 }
 
 .lights-out-alert-coverage-viewer-hero {
   --header-ratio: 4415 / 2943;
-  --header-photo: url("../../Photos/bird-photography/Long-eared Owl_Leasburg Dam_4.10.25_2.png");
+  --header-photo: url("../../Photos/bird-photography/Long-eared Owl_Leasburg Dam_4.10.25_2.png?v=dd641ef12d03");
 }
 
 .viewer-inner {
