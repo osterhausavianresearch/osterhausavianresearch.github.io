@@ -15,13 +15,13 @@
     ["Teaching", "teaching.html"],
     ["Lab Vision", "lab-vision.html"],
     ["News", "news.html"],
-    ["CV", "cv.html"],
+    ["About Me", "about.html"],
     ["Contact", "contact.html"]
   ];
 
   function currentPage() {
     const page = window.location.pathname.split("/").pop();
-    return page || "index.html";
+    return page === "cv.html" ? "about.html" : (page || "index.html");
   }
 
   function renderNavigation() {
@@ -41,7 +41,7 @@
         <span class="brand-mark">DO</span>
         <span>
           <strong>Dylan M. Osterhaus</strong>
-          <small>Migration science and avian conservation</small>
+          <small>Migration ecology and avian conservation</small>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>

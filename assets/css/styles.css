@@ -1184,3 +1184,50 @@ p {
     background-size: 100% 100%, contain;
   }
 }
+
+/* Expanded editorial pages — local review draft. */
+.expanded-page .editorial-heading { max-width: 850px; margin-bottom: 1.8rem; }
+.expanded-page .editorial-heading .eyebrow { color: var(--clay); }
+.expanded-page .section-intro { max-width: 850px; font-size: 1.18rem; line-height: 1.75; margin-bottom: 2rem; }
+.expanded-page .detail-card { padding: 1.7rem; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--sage); border-radius: var(--radius); }
+.expanded-page .detail-card h3 { font-size: 1.4rem; line-height: 1.25; }
+.expanded-page .detail-card p:last-child { margin-bottom: 0; }
+.expanded-page .editorial-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.expanded-page .theme-row { display: grid; grid-template-columns: 70px 1fr; gap: 1.5rem; padding: 2rem 0; border-top: 1px solid var(--line); max-width: 980px; }
+.expanded-page .theme-number { font-size: 2.5rem; color: var(--sage); font-weight: 700; line-height: 1; }
+.expanded-page .theme-row h3 { font-size: 1.7rem; }
+.expanded-page .theme-note { color: var(--muted); font-size: .95rem; margin-bottom: 0; }
+.expanded-page .teaching-model { display: grid; grid-template-columns: 6fr 3fr 2.5fr; border-radius: var(--radius); overflow: hidden; background: var(--forest); color: white; }
+.expanded-page .teaching-model article { padding: 1.8rem; border-right: 1px solid #ffffff35; }
+.expanded-page .teaching-model strong { display: block; font-size: 3rem; color: #e4c46e; margin-bottom: .7rem; }
+.expanded-page .model-caption { color: var(--muted); font-size: .9rem; margin-top: .8rem; }
+.expanded-page .field-note { margin-top: 2rem; }
+.expanded-page blockquote { margin: 0; padding: 2rem; border-left: 3px solid var(--forest); font-size: 1.5rem; }
+.expanded-page blockquote cite { font-size: .9rem; font-style: normal; color: var(--muted); }
+.expanded-page .award-row { display: grid; grid-template-columns: 90px 1fr; gap: 1.5rem; padding: 1.5rem 0; border-top: 1px solid var(--line); }
+.expanded-page .award-year { font-size: 1.5rem; color: var(--forest); font-weight: 800; }
+.expanded-page .award-row h3 { margin-bottom: .4rem; font-size: 1.3rem; }
+.expanded-page .award-org { font-weight: 600; margin-bottom: .35rem; }
+.expanded-page .award-row p:last-child { margin: 0; color: var(--muted); }
+.home-draft .hero .inner > div { container-type: inline-size; }
+.home-draft .hero h1 { font-size: clamp(1rem, 7.6cqw, 3.4rem); }
+.home-draft .hero h1 span { display: block; white-space: nowrap; }
+.home-draft .hero-card h2 { font-size: 1.8rem; }
+.expanded-page .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4.7rem); }
+
+.about-page .page-hero h1 { font-size: clamp(2.5rem, 4.5vw, 4.5rem); }
+.about-page .portrait { max-height: 440px; }
+@media(max-width: 980px) {
+ .expanded-page .editorial-split { grid-template-columns: 1fr; gap: 1rem; }
+ .expanded-page .teaching-model { grid-template-columns: 1fr; }
+ .expanded-page .teaching-model article { border-right: 0; border-bottom: 1px solid #ffffff35; }
+
+}
+@media(max-width: 640px) {
+ .expanded-page .theme-row { grid-template-columns: 40px 1fr; gap: .8rem; }
+ .expanded-page .theme-number { font-size: 1.8rem; }
+ .expanded-page .award-row { grid-template-columns: 1fr; gap: .5rem; }
+}
+
+.expanded-page .student-perspectives { display: grid; gap: 1.8rem; max-width: 980px; }
+.expanded-page .student-perspectives blockquote { font-size: clamp(1.15rem, 2vw, 1.45rem); }
